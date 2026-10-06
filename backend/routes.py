@@ -44,8 +44,8 @@ def get_pictures():
 
 @app.route("/picture/<int:id>", methods=["GET"])
 def get_picture_by_id(id):
-    if id in data['id']:
-        return data['URL']
+    if id in data["id"]:
+        return data["pic_url"]
 
 
 ######################################################################
