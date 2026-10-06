@@ -53,8 +53,8 @@ def get_picture_by_id(id):
 ######################################################################
 # CREATE A PICTURE
 ######################################################################
-@app.route("/picture/<int:id>", methods=["POST"])
-def create_picture(id):
+@app.route("/picture", methods=["POST"])
+def create_picture():
     picture = request.get_json()
 
     for item in data:
